@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		30CE54B92CCC661200D22CFE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30CE54B22CCC661200D22CFE /* Preview Assets.xcassets */; };
+		30CE54BA2CCC661200D22CFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30CE54B42CCC661200D22CFE /* Assets.xcassets */; };
+		30CE54BB2CCC661200D22CFE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CE54B52CCC661200D22CFE /* ContentView.swift */; };
+		30CE54BC2CCC661200D22CFE /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CE54B62CCC661200D22CFE /* Item.swift */; };
+		30CE54BD2CCC661200D22CFE /* MessengerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CE54B72CCC661200D22CFE /* MessengerApp.swift */; };
+		30CE54CB2CCC8C2900D22CFE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CE54CA2CCC8C2900D22CFE /* LoginView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		30CE54962CCC65D900D22CFE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,14 +36,15 @@
 		30CE54832CCC65D700D22CFE /* Messenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Messenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30CE54952CCC65D900D22CFE /* MessengerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MessengerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30CE549F2CCC65D900D22CFE /* MessengerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MessengerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		30CE54B22CCC661200D22CFE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		30CE54B42CCC661200D22CFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		30CE54B52CCC661200D22CFE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		30CE54B62CCC661200D22CFE /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		30CE54B72CCC661200D22CFE /* MessengerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerApp.swift; sourceTree = "<group>"; };
+		30CE54CA2CCC8C2900D22CFE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		30CE54852CCC65D700D22CFE /* Messenger */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Messenger;
-			sourceTree = "<group>";
-		};
 		30CE54982CCC65D900D22CFE /* MessengerTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = MessengerTests;
@@ -75,7 +85,7 @@
 		30CE547A2CCC65D700D22CFE = {
 			isa = PBXGroup;
 			children = (
-				30CE54852CCC65D700D22CFE /* Messenger */,
+				30CE54B82CCC661200D22CFE /* Messenger */,
 				30CE54982CCC65D900D22CFE /* MessengerTests */,
 				30CE54A22CCC65D900D22CFE /* MessengerUITests */,
 				30CE54842CCC65D700D22CFE /* Products */,
@@ -92,6 +102,91 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		30CE54B32CCC661200D22CFE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				30CE54B22CCC661200D22CFE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		30CE54B82CCC661200D22CFE /* Messenger */ = {
+			isa = PBXGroup;
+			children = (
+				30CE54BE2CCC661500D22CFE /* App */,
+				30CE54C22CCC663400D22CFE /* Extensions */,
+				30CE54BF2CCC662200D22CFE /* Core */,
+				30CE54C02CCC662700D22CFE /* Model */,
+				30CE54C12CCC662F00D22CFE /* Service */,
+				30CE54B42CCC661200D22CFE /* Assets.xcassets */,
+				30CE54B52CCC661200D22CFE /* ContentView.swift */,
+				30CE54B62CCC661200D22CFE /* Item.swift */,
+				30CE54B32CCC661200D22CFE /* Preview Content */,
+			);
+			path = Messenger;
+			sourceTree = "<group>";
+		};
+		30CE54BE2CCC661500D22CFE /* App */ = {
+			isa = PBXGroup;
+			children = (
+				30CE54B72CCC661200D22CFE /* MessengerApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		30CE54BF2CCC662200D22CFE /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				30CE54C32CCC66A300D22CFE /* Authentication */,
+				30CE54C42CCC66B400D22CFE /* Root */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		30CE54C02CCC662700D22CFE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		30CE54C12CCC662F00D22CFE /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		30CE54C22CCC663400D22CFE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		30CE54C32CCC66A300D22CFE /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				30CE54C52CCC69F600D22CFE /* View */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		30CE54C42CCC66B400D22CFE /* Root */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		30CE54C52CCC69F600D22CFE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				30CE54CA2CCC8C2900D22CFE /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +201,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				30CE54852CCC65D700D22CFE /* Messenger */,
 			);
 			name = Messenger;
 			packageProductDependencies = (
@@ -212,6 +304,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30CE54B92CCC661200D22CFE /* Preview Assets.xcassets in Resources */,
+				30CE54BA2CCC661200D22CFE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +330,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30CE54BB2CCC661200D22CFE /* ContentView.swift in Sources */,
+				30CE54BC2CCC661200D22CFE /* Item.swift in Sources */,
+				30CE54CB2CCC8C2900D22CFE /* LoginView.swift in Sources */,
+				30CE54BD2CCC661200D22CFE /* MessengerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
